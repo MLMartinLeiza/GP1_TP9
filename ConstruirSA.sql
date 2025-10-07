@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 05-10-2025 a las 03:20:30
+-- Tiempo de generación: 07-10-2025 a las 13:37:15
 -- Versión del servidor: 10.11.11-MariaDB
 -- Versión de PHP: 8.4.13
 
@@ -45,7 +45,7 @@ CREATE TABLE `empleado` (
 INSERT INTO `empleado` (`id_empleado`, `dni`, `apellido`, `nombre`, `acceso`, `estado`) VALUES
 (1, 30123456, 'Pérez', 'Juan', 0, 1),
 (2, 28999888, 'García', 'Lucía', 0, 1),
-(3, 31555111, 'Rodríguez', 'Marcos', 0, 0);
+(3, 31555111, 'Rodríguez', 'Marcos', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -90,7 +90,6 @@ CREATE TABLE `movimiento` (
 --
 
 INSERT INTO `movimiento` (`id_movimiento`, `id_empleado`, `id_herramienta`, `fechap`, `fechad`, `cantidadret`) VALUES
-(1, 1, 1, '2025-10-02', '2025-10-04', 2),
 (2, 2, 3, '2025-10-02', '2025-10-04', 2),
 (3, 3, 2, '2025-10-02', '2025-10-04', 2);
 
